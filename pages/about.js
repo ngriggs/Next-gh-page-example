@@ -1,7 +1,10 @@
-import Link from 'next/link'
-export default () => (
-  <div>
-    <div>About us</div>
-    <div>Back to <Link href='/' as={ process.env.BACKEND_URL + '/'}><a>Home</a></Link></div>
-  </div>
-)
+
+import Layout from '../components/MyLayout.js';
+
+export default function About() {
+  return (
+    <Layout>
+      <p>This is the about page</p>
+    </Layout>
+  );
+}
